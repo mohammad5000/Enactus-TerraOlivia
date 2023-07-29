@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+     color: white;
+}
+header{
+    margin-top: 10px;
+}
+.navbar{
+    padding: 0;
+}
+.navbar .container-fluid{
+    gap: 5px;
+    padding: 0;
+}
+.navbar-toggler{
+    margin-left: 15px;
+}
+.navbar-collapse{
+    background-color: #58623F;
+}
+.navbar-nav{
+width: 70%;
+}
+.nav-item{
+    border-right: 1px solid #bbbbbb;
+    padding: 1px 30px;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item:last-child{
+    border-right: none;
+    
+}
+.nav-link{
+    color: #e6e6e6;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav-item:hover{
+    color: rgb(110, 204, 110);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.b-cont{
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    background-image: url(../imgs/pc\ 2.png);
+    background-size: cover;
+}
+.b-cont::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4;
+}
+.carousel{
+    height: 100%;
+    z-index: 5;
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+
+.b-t-cont{
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  color: white;
+  z-index: 2;
+  
+}
+.bt-1{
+    font-size:70px;
+}
+.bt-2{
+    text-align: center;
+    font-size:70px;
+}
+.b-t-cont p{
+    padding-top:10px;
+    
+}
+.train-cont{
+    padding: 100px 0px;
+    width: 50%;
+    margin: auto;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.train-cont h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    color: #58623F;
+    font-weight: 600;
+}
+.train-cont h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    color: #58623F;
+    font-weight: 600;
+}
+.train-cont p{
+    font-size: 20px;
+    padding: 0 0 50px 10px;
+}
+
+
+
+
+
+footer{
+    background-color: #383F44;
+    color: white;
+    padding: 50px 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+    gap: 50px;
+}
+.f-link-cont{
+    gap: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.f-link-cont a{
+   color: aquamarine;
+   width: fit-content;
+}
+.f-link-cont a:hover{
+    color: rgb(110, 204, 110);
+    text-decoration: underline;
+}
+.f-about-cont{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.f-contact-cont{
+    gap: 15px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.f-contact-cont a{
+    color: aquamarine;
+    width: fit-content;
+ }
+ .f-contact-cont a:hover{
+     color: rgb(110, 204, 110);
+     text-decoration: underline;
+ }
+ .cp{
+    background-color: #31353A;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+@media only screen and (max-width: 1199.98px) {
+    .b-cont{ 
+    background-image: url(../imgs/mb\ 2.png);
+    }
+  }
+@media only screen and (max-width: 991.98px) {
+    .navbar-nav{
+        width: 100%;
+        }
+    .nav-item{
+        border-right:0;
+           
+        }
+   
+   
+    .bt-1{
+        font-size:50px;
+    }
+    .bt-2{
+        font-size:50px;
+    }
+    .train-cont{
+        
+        width: 70%;
+        
+    }
+  }
+@media only screen and (max-width: 767.98px) { 
+    .b-t-cont{
+        width: 70%;
+      }
+      .b-t-cont p{
+        overflow: auto;
+        max-height: 200px;
+    }
+    .bt-1{
+        font-size:29px;
+    }
+    .bt-2{
+        font-size:29px;
+    }
+    .train-cont{
+        
+        width: 90%;
+        
+    }
+   }
